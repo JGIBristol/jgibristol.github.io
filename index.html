@@ -1,12 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Redirecting to https://bristol.ac.uk/golding/</title>
-    <meta http-equiv="refresh" content="0; URL=https://bristol.ac.uk/golding/">
-    <link rel="canonical" href="https://bristol.ac.uk/golding/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jean Golding Institute Resources Landing Page</title>
+    <style>
+      body {
+        background-color: #73225a; /* JGI backgroun Colour */
+        font-family: Arial, sans-serif;
+        color: whitesmoke;
+      }
+
+      #logo-box {
+        width: 100%;
+        height: 80px;
+        align-items: center;
+        margin: 20px;
+
+      }
+      
+      #main-logo {
+        max-width: 250px;
+        
+        width: auto; 
+        height:auto;
+      }
+
+      #logo {
+        width: 100%;
+        height: 100%;
+      }
+
+      #wrapper {
+        padding: 20px;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-flow: row wrap;
+      }
+
+      #button-column {
+        text-align: center;
+        flex-wrap: wrap;
+        width: 600px;
+        min-width: 100px;
+      }
+      #content {
+        width: 100%;
+
+        justify-content: center;
+        margin-top: 20px;
+
+      }
+      .button {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+       
+        padding: 10px;
+        background-color: #e0259a; /* Slightly lighter gray for buttons */
+        text-decoration: none;
+        border-radius: 5px;
+        color: white;
+        border: 1px solid #e0259a;
+        transition: 0.3s;
+      }
+
+      .button:hover {
+        transition: 0.3s;
+
+        background-color: #73225a; /* Slightly lighter gray for buttons */
+
+        border: 1px solid #e0259a;
+        /* outline-color: #e0259a;
+            outline-style: fixed; */
+      }
+
+      #socials-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        width: 100%;
+
+      }
+
+      #socials-logos {
+        width: 60px;
+        height: 60px;
+        margin: 20px;
+      }
+
+      .h1 {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    This site has moved to <a href="https://bristol.ac.uk/golding/">bristol.ac.uk/golding</a>.
+
+
+    <!-- Primary Wrapping box -->
+    <div id="wrapper">
+
+      <!-- Box containing top JGI Logo -->
+      <div id="logo-box">
+        <img
+          id="main-logo"
+          src="public/jgi_logo.png"
+          alt="Logo for the Jean Golding Institute"
+        />
+      </div>
+      <div id="content">
+        <!-- <h1>Jean Golding Institute</h1> -->
+        <p>Stay in touch with us!</p>
+      </div>
+      <div id="button-column">
+        <a class="button" href="https://www.bristol.ac.uk/golding/">Website</a>
+        <a class="button" href="https://jeangoldinginstitute.blogs.bristol.ac.uk/">News and Blog</a>
+        <a class="button" href="https://www.bristol.ac.uk/golding/mailing-list/">Mailing List</a>
+        <a class="button" href="https://www.bristol.ac.uk/golding/podcast/">Podcast</a>
+
+     
+      </div>
+
+      <div id="socials-box">
+        <a href="https://twitter.com/JGIBristol" id="socials-logos">
+          <img id="logo" src="public/twitter.svg" alt="Twitter logo" />
+        </a>
+        <a href="http://www.linkedin.com/in/jeangoldinginstitute" id="socials-logos">
+          <img id="logo" src="public/linkedin.svg" alt="LinkedIn logo" />
+        </a>
+        <a href="https://www.youtube.com/@JGIBristol" id="socials-logos">
+          <img id="logo" src="public/youtube.svg" alt="Youtube logo" />
+        </a>
+      </div>
+    </div>
   </body>
 </html>
